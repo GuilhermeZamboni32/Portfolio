@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; 
-import profileImage from '../../assets/minha-foto-teste.png';
+import profileImage1 from '../../assets/minha-foto-1.png';
 
 function Home() {
   return (
@@ -42,7 +42,7 @@ function Home() {
       {/* Imagem */}
       <div className="home-image">
         {/* 2. Descomente e use a imagem que você importou */}
-         <img src={profileImage} alt="Foto de Guilherme" /> 
+         <img src={profileImage1} alt="Foto de Guilherme" /> 
 
      
        

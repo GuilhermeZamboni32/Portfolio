@@ -4,7 +4,7 @@ import React from 'react';
 import './Sobre.css'; // Importa o CSS
 
 // 1. Importe a mesma foto da home (ou outra, se preferir)
-import profileImage from '../../assets/minha-foto-teste.png';
+import profileImage2 from '../../assets/minha-foto-2.jpg';
 
 // 2. Importe os ícones de skills (precisa ter 'react-icons' instalado)
 import { 
@@ -34,7 +34,7 @@ function Sobre() {
         
         {/* Coluna da Imagem */}
         <div className="sobre-imagem">
-          <img src={profileImage} alt="Guilherme Zamboni" />
+          <img src={profileImage2} alt="Guilherme Zamboni" />
         </div>
 
         {/* Coluna do Texto */}
