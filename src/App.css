@@ -1,42 +1,25 @@
+/* Em: src/App.css */
+
+/* Isso faz com que o App ocupe a tela inteira
+   e organiza o layout em coluna (Navbar, main, Footer) */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Isso faz com que o <main> (onde o <Outlet> está) 
+   cresça e ocupe todo o espaço disponível no meio */
+main {
+  flex: 1; /* O truque mágico! */
+  
+  /* Um padding para o conteúdo não colar nas bordas */
+  padding: 2rem; 
+}
+
+/* Vamos deixar os placeholders de Navbar/Footer com o tema */
+nav, footer {
+  padding: 1rem 2rem;
+  background-color: #2b2a2c; /* Um cinza um pouco diferente do fundo */
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

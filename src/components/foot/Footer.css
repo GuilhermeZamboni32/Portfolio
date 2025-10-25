@@ -1,0 +1,30 @@
+/* Em: src/components/Footer.css */
+
+.footer {
+  background-color: #2b2a2c; /* Mesma cor do navbar */
+  color: #c7c7c7;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 2rem; /* Empurra o rodapé para baixo do conteúdo */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #c7c7c7;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00bfff; /* Cor de destaque */
+}
+
+.footer p {
+  font-size: 0.9rem;
+}

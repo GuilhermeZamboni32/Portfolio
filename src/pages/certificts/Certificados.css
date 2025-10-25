@@ -1,0 +1,80 @@
+/* Em: src/pages/Certificados.css */
+
+.certificados-page {
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza a seção na página */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.certificados-page h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 2.5rem;
+  color: #00bfff; /* Cor de destaque */
+}
+
+/* O grid que vai segurar os cards */
+.certificados-grid {
+  display: grid;
+  /* Tenta criar 3 colunas, mas se não couber, 
+    cria colunas de no mínimo 300px 
+  */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}
+
+/* O estilo de cada card individual */
+.certificado-card {
+  background-color: #2b2a2c; /* Cinza um pouco mais claro que o fundo */
+  border-radius: 8px;
+  border: 1px solid #444;
+  overflow: hidden; /* Garante que a imagem não vaze */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificado-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 191, 255, 0.1);
+}
+
+.certificado-imagem {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Proporção comum de certificados */
+  object-fit: cover; /* Faz a imagem cobrir o espaço */
+  background-color: #444;
+}
+
+.certificado-conteudo {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Faz o conteúdo ocupar o espaço */
+}
+
+.certificado-conteudo h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.certificado-conteudo p {
+  font-size: 0.95rem;
+  color: #c7c7c7;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Empurra o link para baixo */
+}
+
+/* Link para ver o certificado */
+.certificado-link {
+  font-weight: 600;
+  color: #00bfff;
+  text-decoration: none;
+  align-self: flex-start; /* Alinha o link à esquerda */
+}
+
+.certificado-link:hover {
+  text-decoration: underline;
+}

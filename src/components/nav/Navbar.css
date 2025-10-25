@@ -1,0 +1,59 @@
+/* Em: src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, links à direita */
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #2b2a2c; /* Um cinza um pouco diferente do fundo */
+  border-bottom: 1px solid #444;
+  height: 80px;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #edecef;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none; /* Remove bolinhas do <ul> */
+  gap: 2rem; /* Espaço entre os links */
+}
+
+.nav-link {
+  color: #c7c7c7; /* Cinza claro para links normais */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+/* Quando o link for 'hover' (mouse em cima) */
+.nav-link:hover {
+  color: #00bfff; /* Cor de destaque */
+}
+
+/* O 'NavLink' do react-router-dom adiciona esta classe 
+   automaticamente no link da página atual */
+.nav-link.active {
+  color: #00bfff;
+  border-bottom: 2px solid #00bfff;
+}
+
+/* Responsividade simples para celular */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Empilha logo e links */
+    height: auto;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    gap: 1.5rem;
+  }
+}
